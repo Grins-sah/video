@@ -30,7 +30,7 @@ export default function Receiver():ReactElement {
 
       sourceBuffer.addEventListener("updateend", appendNextChunk);
 
-      const ws = new WebSocket("ws://localhost:8080");
+      const ws = new WebSocket("ws://192.168.0.250:8080");
       ws.binaryType = "arraybuffer";
       wsRef.current = ws;
 
