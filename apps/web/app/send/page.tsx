@@ -14,7 +14,7 @@ export default function Sender():ReactElement {
         videoElement.srcObject = stream;
       }
 
-      const ws = new WebSocket("wss://video.grinssah.me");
+      const ws = new WebSocket("ws://localhost:8080");
       ws.binaryType = "arraybuffer";
       wsRef.current = ws;
 
